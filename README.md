@@ -56,3 +56,4 @@ To launch this website, simply clone the repo and open the index.html file in th
 
 [GitHub]: https://github.com/Hazem-AK/
 [GitHub Repository]: https://github.com/Hazem-AK/fwd-Adv-Landing-Page
+[license]: https://github.com/Hazem-AK/fwd-Adv-Landing-Page/blob/master/LICENSE.md

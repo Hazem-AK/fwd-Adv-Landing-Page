@@ -41,7 +41,6 @@ To launch this website, simply clone the repo and open the index.html file in th
 
 #### Hazem A.Khalil
 * [GitHub]
-* [LinkedIn]
 
 ## License
 

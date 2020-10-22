@@ -1,13 +1,31 @@
 // get navbar, header and all sections
 const navbar = document.getElementById("navbar__list");
+const navbarMenu = document.getElementById("navbar-menu");
 const sections = document.querySelectorAll("section");
 const pageHeader = document.querySelector("header");
 
+const maxWidth = 800;
+
+function toggleHamburger() {
+	if (navbarMenu.className === "navbar__menu") {
+		navbarMenu.classList.add("responsive");
+	} else {
+		navbarMenu.classList.remove("responsive");
+	}
+}
+
+// make sure hamburger-menu is always visible
+window.addEventListener("resize", () => {
+	if (window.innerWidth < maxWidth) {
+		pageHeader.style.opacity = 1;
+	}
+});
+
 // hide nav-bar when not scrolling
 let timer = null;
-document.addEventListener(
-	"scroll",
-	() => {
+document.addEventListener("scroll", () => {
+	navbarMenu.classList.remove("responsive");
+	if (window.innerWidth > maxWidth) {
 		pageHeader.style.opacity = 1;
 		if (timer !== null) {
 			clearTimeout(timer);
@@ -18,16 +36,17 @@ document.addEventListener(
 				pageHeader.style.opacity = 0;
 			}
 		}, 750);
-	},
-	false
-);
+	}
+});
 
-// make pageHeader (nab-bar) visible on mouseover and hide on mouseout
+// make pageHeader (nav-bar) visible on mouseover and hide on mouseout
 pageHeader.addEventListener("mouseover", () => {
-	pageHeader.style.opacity = 1;
+	if (window.innerWidth > maxWidth) {
+		pageHeader.style.opacity = 1;
+	}
 });
 pageHeader.addEventListener("mouseout", () => {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && window.innerWidth > maxWidth) {
 		pageHeader.style.opacity = 0;
 	}
 });
@@ -57,6 +76,8 @@ sections[0].classList.add("your-active-class");
 const scrollToSection = (sectionId) => {
 	const sectionToScrollTo = document.getElementById(sectionId);
 	sectionToScrollTo.scrollIntoView({ behavior: "smooth" });
+	// close hamburger-menu when visible
+	const navbar = document.getElementById("navbar-menu");
 };
 
 // select all anchors
@@ -66,7 +87,7 @@ const navbarLinks = Array.from(navbar.querySelectorAll("a"));
 const setActiveState = (entries) => {
 	entries.forEach((entry) => {
 		// make sure callback doesn't get fired uncontrolled
-		if (entry.intersectionRatio >= 1) {
+		if (entry.intersectionRatio >= 0.75) {
 			// get active link
 			const activeLink = navbarLinks.find((link) => {
 				return link.id === `link${entry.target.id}`;
@@ -90,7 +111,7 @@ const setActiveState = (entries) => {
 // IntersectionObserver options
 const options = {
 	rootMargin: "0px",
-	threshold: 1,
+	threshold: 0.75,
 };
 
 const observer = new IntersectionObserver(setActiveState, options);

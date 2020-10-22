@@ -87,10 +87,12 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+
 .navbar__menu ul {
 	padding-left: 0;
 	margin: 0;
-	text-align: right;
+	text-align: left;
+	display: inline-block;
 }
 
 .navbar__menu li {
@@ -104,6 +106,46 @@ section {
 	text-decoration: none;
 	color: #000;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.navbar__menu li {
+		display: none;
+	}
+	.navbar__menu a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.navbar__menu.responsive {
+		position: relative;
+		text-align: center;
+		display: block;
+	}
+	.navbar__menu.responsive a.icon {
+		position: absolute;
+		margin-left: 40px;
+		right: 0;
+		top: 0;
+	}
+	.navbar__menu.responsive li {
+		float: none;
+		display: block;
+		right: 0;
+	}
+}
+
+.icon {
+	display: none;
+
+	height: 52px;
+}
+
+i {
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
 .active,
@@ -234,15 +276,6 @@ section.your-active-class {
 	animation-timing-function: ease-in;
 
 	/*background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%); */
-}
-
-#slideSource {
-	opacity: 1;
-	transition: opacity 1s;
-}
-
-#slideSource.fade {
-	opacity: 0;
 }
 
 section.your-active-class .landing__container::before {

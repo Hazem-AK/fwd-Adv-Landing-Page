@@ -1,18 +1,28 @@
 # Landing Page Project
 
+
+![Current Version](https://img.shields.io/badge/version-v0.1-blue)
+
 ## Table of Contents
-* [Instructions](#instructions)
-* [index.html](#index.html)
-* [app.js](#app.js)
-* [styles.css](#styles.css)
-* [Running](#Running)
+- [Description](#Description)
+- [Prerequisite](#Prerequisite)
+- [index.html](#index.html)
+- [app.js](#app.js)
+- [styles.css](#styles.css)
+- [Running](#Running)
+- [Authors](#authors)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-## Instructions
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open js/app.js and start building out the app's functionality
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+
+## Description
+This is a dynamic landing page project for the fwd-Udacity-Adv course
+
+## Prerequisite
+* A text editor or an IDE (like IntelliJ)
+* A Browser (chrome, firefox, etc..)
 
 ## index.html
 This file is the skeleton of the landing page. It's written in HTML and contains the content to be displayed. Filler text is used as a placeholder. This was built upon to create an interactive site.
@@ -26,3 +36,27 @@ This is where all the visual code is kept. It is responible for all the visual a
 
 ## Running
 To launch this website, simply clone the repo and open the index.html file in the browser.
+
+## Authors
+
+#### Hazem A.Khalil
+* [GitHub]
+* [LinkedIn]
+
+You can also see the complete [list of contributors][contributors] who participated in this project.
+
+## License
+
+`Project Title` is open source software [licensed as MIT][license].
+
+## Acknowledgments
+
+This section can also be called as `Resources` or `References`
+
+* udacity landing page code-starter files [GitHub Pages]: https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page
+* ReadMe Template by madhur-taneja [GitHub Pages]: https://madhur-taneja.github.io/README-Template
+* Udacity fwd community
+
+[//]: # (HyperLinks)
+
+[GitHub Repository]: https://github.com/Hazem-AK/fwd-Adv-Landing-Page

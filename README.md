@@ -18,7 +18,7 @@
 
 
 ## Description
-This is a dynamic landing page project for the fwd-Udacity-Adv course
+This is a dynamic landing page project for the fwd-Udacity-Professional course
 
 ## Prerequisite
 * A text editor or an IDE (like IntelliJ)

@@ -1,7 +1,7 @@
 # Landing Page Project
 
 
-![Current Version](https://img.shields.io/badge/version-v0.1-blue)
+![Current Version](https://img.shields.io/badge/version-v0.2-blue)
 
 ## Table of Contents
 - [Description](#Description)
@@ -43,20 +43,17 @@ To launch this website, simply clone the repo and open the index.html file in th
 * [GitHub]
 * [LinkedIn]
 
-You can also see the complete [list of contributors][contributors] who participated in this project.
-
 ## License
 
-`Project Title` is open source software [licensed as MIT][license].
+`fwd-Adv-Landing-Page` is open source software [licensed as MIT][license].
 
 ## Acknowledgments
 
-This section can also be called as `Resources` or `References`
-
-* udacity landing page code-starter files [GitHub Pages]: https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page
-* ReadMe Template by madhur-taneja [GitHub Pages]: https://madhur-taneja.github.io/README-Template
+* Udacity landing page code-starter files https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page
+* ReadMe Template by madhur-taneja https://madhur-taneja.github.io/README-Template
 * Udacity fwd community
 
 [//]: # (HyperLinks)
 
+[GitHub]: https://github.com/Hazem-AK/
 [GitHub Repository]: https://github.com/Hazem-AK/fwd-Adv-Landing-Page
